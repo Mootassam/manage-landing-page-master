@@ -10,7 +10,7 @@ html {
 }
 body {
   font-size: 16px;
-  padding: 2rem 6rem 0;
+
   font-family: Be Vietnam Pro, sans-serif;
 }
 li {
@@ -29,6 +29,7 @@ p {
 /* Styling the header */
 .app__header {
   display: flex;
+  padding: 2rem 6rem 0;
   justify-content: space-between;
   align-items: center;
   align-content: center;
@@ -61,11 +62,14 @@ p {
 }
 
 /* Styling the content */
-/* styling the chart__content  */
 
 .app__content {
 }
+
+/* styling the chart__content  */
+
 .content__chart {
+  padding: 2rem 6rem 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -124,6 +128,7 @@ p {
   width: 100%;
   gap: 7rem;
   padding-bottom: 4rem;
+  padding: 2rem 6rem 0;
 }
 
 /* Syling the left  */
@@ -145,16 +150,16 @@ p {
   display: inline;
 }
 .right__numbers {
-  padding-bottom: 2rem;
-  display: flex;
-  gap: 20px;
   align-content: flex-start;
   align-items: baseline;
+  display: flex;
+  gap: 24px;
+  padding-bottom: 3rem;
 }
 
 .number {
   background-color: var(--bright_red);
-  padding: 0.3rem 1rem;
+  padding: 0.3rem 1.3rem;
   border-radius: 1rem;
   height: 27%;
   color: var(--very_pale_red);
@@ -214,8 +219,8 @@ h4 {
 /* Styling the prefooter */
 
 .content__prefooter {
+  padding: 3rem 6rem;
   display: flex;
-  padding: 3rem;
   background-color: var(--bright_red);
   background-image: url(./images/bg-simplify-section-desktop.svg);
   background-repeat: no-repeat;
@@ -224,8 +229,9 @@ h4 {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  position: relative;
   width: 100%;
+  max-width: 100%;
+  position: relative;
 }
 .content__prefooter > h1 {
   color: var(--vary_light_gray);
@@ -241,9 +247,11 @@ h4 {
   cursor: pointer;
 }
 
+/* Styling the Footer */
+
 .app__footer {
   background-color: var(--very_dark_blue);
-  padding: 3rem;
+  padding: 3rem 6rem;
   display: flex;
   justify-content: space-between;
   color: var(--vary_light_gray);
