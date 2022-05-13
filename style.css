@@ -112,6 +112,7 @@ p {
   background-color: var(--bright_red);
   border-radius: 3rem;
   color: var(--very_pale_red);
+  cursor: pointer;
 }
 
 /* Styling the content about  */
@@ -129,6 +130,7 @@ p {
 .about__left > h1 {
   padding-bottom: 2rem;
   font-weight: 700;
+  line-height: 2.5rem;
   color: var(--dark_blue);
 }
 .about__left > p {
@@ -140,11 +142,14 @@ p {
 /* Styling the Right */
 
 .about__right {
+  display: inline;
 }
 .right__numbers {
   padding-bottom: 2rem;
   display: flex;
   gap: 20px;
+  align-content: flex-start;
+  align-items: baseline;
 }
 
 .number {
@@ -171,7 +176,7 @@ h4 {
 .content__testim > h1 {
   padding-bottom: 6rem;
   color: var(--dark_blue);
-  font-weight: 900;
+  font-weight: 700;
 }
 .content__testim > div {
   display: flex;
@@ -203,6 +208,7 @@ h4 {
   background-color: var(--bright_red);
   border-radius: 3rem;
   color: var(--very_pale_red);
+  cursor: pointer;
 }
 
 /* Styling the prefooter */
@@ -210,8 +216,11 @@ h4 {
 .content__prefooter {
   display: flex;
   padding: 3rem;
-
   background-color: var(--bright_red);
+  background-image: url(./images/bg-simplify-section-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
   justify-content: space-between;
   align-items: center;
   align-content: center;
@@ -229,6 +238,7 @@ h4 {
   border-radius: 3rem;
   color: var(--bright_red);
   background-color: var(--vary_light_gray);
+  cursor: pointer;
 }
 
 .app__footer {
@@ -270,6 +280,7 @@ h4 {
   background-color: var(--bright_red);
   border-radius: 3rem;
   color: var(--very_pale_red);
+  cursor: pointer;
 }
 input {
   border: none;
