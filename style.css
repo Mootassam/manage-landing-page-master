@@ -127,8 +127,9 @@ p {
   align-content: center;
   width: 100%;
   gap: 7rem;
-  padding-bottom: 4rem;
+
   padding: 2rem 6rem 0;
+  padding-bottom: 6rem;
 }
 
 /* Syling the left  */
@@ -211,7 +212,7 @@ h4 {
 .testim__user {
   padding-bottom: 1.6rem;
   color: var(--dark_blue);
-  font-weight: 400;
+  font-weight: 700;
   padding-top: 1rem;
 }
 .testim__button {
