@@ -196,15 +196,23 @@ h4 {
   justify-content: center;
   justify-items: center;
   align-items: center;
+  background-color: var(--very_pale_red);
+  position: relative;
+  padding: 2rem;
+  max-width: 100%;
 }
 .testim__descriptions > img {
-  width: 30%;
+  width: 60px;
   padding-bottom: 25px;
+  position: absolute;
+  top: 0;
+  margin-top: -2rem;
 }
 .testim__user {
   padding-bottom: 1.6rem;
   color: var(--dark_blue);
   font-weight: 400;
+  padding-top: 1rem;
 }
 .testim__button {
   margin: 4rem 0 9rem 0;
@@ -276,6 +284,10 @@ h4 {
 }
 .app__footer ul li {
   padding: 0 0 0.8rem 0;
+}
+.app__footer ul li:hover {
+  color: var(--bright_red);
+  cursor: pointer;
 }
 .footer__form {
   display: flex;
