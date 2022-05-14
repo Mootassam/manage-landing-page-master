@@ -25,6 +25,12 @@ p {
 .app {
   justify-content: center;
   align-items: center;
+  background-image: url(./images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-position-y: -250px;
+  background-position-x: 750px;
+
+
 }
 /* Styling the header */
 .app__header {
@@ -34,6 +40,7 @@ p {
   align-items: center;
   align-content: center;
   padding-bottom: 6rem;
+
 }
 
 .menue__list {
@@ -49,7 +56,7 @@ p {
 }
 .menue__button {
   float: right;
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 2rem;
   background-color: var(--bright_red);
   border-radius: 3rem;
   color: var(--very_pale_red);
@@ -112,7 +119,7 @@ p {
 
 .chart__button {
   width: max-content;
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 2rem;
   background-color: var(--bright_red);
   border-radius: 3rem;
   color: var(--very_pale_red);
@@ -197,7 +204,7 @@ h4 {
   justify-content: center;
   justify-items: center;
   align-items: center;
-  background-color: var(--very_pale_red);
+  background-color: var(--vary_light_gray);
   position: relative;
   padding: 2rem;
   max-width: 100%;
@@ -218,7 +225,7 @@ h4 {
 .testim__button {
   margin: 4rem 0 9rem 0;
   width: max-content;
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 2rem;
   background-color: var(--bright_red);
   border-radius: 3rem;
   color: var(--very_pale_red);
@@ -249,7 +256,7 @@ h4 {
 }
 .prefooter__button {
   width: max-content;
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 2rem;
   border-radius: 3rem;
   color: var(--bright_red);
   background-color: var(--vary_light_gray);
