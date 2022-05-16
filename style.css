@@ -29,8 +29,6 @@ p {
   background-repeat: no-repeat;
   background-position-y: -250px;
   background-position-x: 750px;
-
-
 }
 /* Styling the header */
 .app__header {
@@ -40,7 +38,6 @@ p {
   align-items: center;
   align-content: center;
   padding-bottom: 6rem;
-
 }
 
 .menue__list {
@@ -302,6 +299,13 @@ h4 {
   flex-direction: column;
   justify-content: space-between;
 }
+.form {
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 7px;
+}
 .form > button {
   width: max-content;
   padding: 0.8rem 1.3rem;
@@ -310,6 +314,20 @@ h4 {
   color: var(--very_pale_red);
   cursor: pointer;
 }
+.form > div {
+  display: flex;
+  flex-direction: column;
+}
+.span {
+  display: none;
+}
+.span_js {
+  color: red;
+  font-size: small;
+  text-align: center;
+  padding-top: 10px;
+}
+
 input {
   border: none;
   padding: 0.8rem;
