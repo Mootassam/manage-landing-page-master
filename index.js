@@ -28,3 +28,21 @@ const Check = () => {
     return false;
   }
 };
+
+const Toggle = () => {
+  const div = document.querySelector(".app__header__mobile");
+  div.style = "display: flex; ";
+  const close = document.querySelector(".close");
+  const hamburger = document.querySelector(".hamburger");
+  hamburger.style = "display:none";
+  close.style = "display:block;";
+};
+
+const hide = () => {
+  const div = document.querySelector(".app__header__mobile");
+  div.style = "display: none; ";
+  const close = document.querySelector(".close");
+  const hamburger = document.querySelector(".hamburger");
+  hamburger.style = "display:flex";
+  close.style = "display:none;";
+};
