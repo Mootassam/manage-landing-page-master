@@ -177,6 +177,7 @@ p {
     align-items: center;
     text-align: center;
     gap: 1rem;
+    padding-bottom: 4rem;
   }
   .content__chart > .chart__text {
     position: relative;
@@ -188,7 +189,7 @@ p {
     text-align: center;
   }
   .chart__text > h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
   .chart__text > p {
     width: 100%;
@@ -203,10 +204,20 @@ p {
     object-fit: contain;
   }
   .chart__button {
+    margin: auto;
     justify-content: center;
     align-items: center;
     align-content: center;
   }
+
+  /* .chart__button {
+    width: max-content;
+    padding: 0.8rem 2rem;
+    background-color: var(--bright_red);
+    border-radius: 3rem;
+    color: var(--very_pale_red);
+    cursor: pointer;
+  } */
 
   .app__header__mobile {
     display: none;
@@ -249,7 +260,7 @@ p {
 
 /* Syling the left  */
 .about__left > h1 {
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   font-weight: 700;
   line-height: 2.5rem;
   color: var(--dark_blue);
@@ -292,12 +303,12 @@ h4 {
     align-items: center;
     align-content: center;
     padding: 2rem 1rem 0;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     gap: 1rem;
   }
 
   .about__left > h1 {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     width: 100%;
     text-align: center;
   }
@@ -411,6 +422,7 @@ h4 {
   width: 40%;
   font-weight: 700;
 }
+
 .prefooter__button {
   width: max-content;
   padding: 0.8rem 2rem;
@@ -425,13 +437,20 @@ h4 {
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
     flex-direction: column;
+    width: auto;
+    text-align: justify;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-position-x: -340px;
+    background-position-y: -28px;
   }
+
   .content__prefooter > h1 {
     text-align: center;
     padding-bottom: 40px;
-    width: 50%;
+    width: 100%;
   }
 }
 /* Styling the Footer */
