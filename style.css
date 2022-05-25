@@ -177,7 +177,7 @@ p {
     align-items: center;
     text-align: center;
     gap: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
   }
   .content__chart > .chart__text {
     position: relative;
@@ -190,10 +190,12 @@ p {
   }
   .chart__text > h1 {
     font-size: 35px;
+    padding-bottom: 0.5rem;
   }
   .chart__text > p {
     width: 100%;
     text-align: center;
+    padding-bottom: 1.5rem;
   }
   .content__chart > .chart__img {
     z-index: 0;
@@ -311,9 +313,10 @@ h4 {
     padding-bottom: 1rem;
     width: 100%;
     text-align: center;
+    font-weight: bolder;
   }
   .about__left > p {
-    width: 100%;
+    width: auto;
     text-align: center;
     padding-bottom: 10px;
   }
@@ -397,6 +400,15 @@ h4 {
 @media screen and (max-width: 900px) {
   .content__testim {
     width: 100%;
+  }
+  .testim__button {
+    margin: 2rem 0 3rem 0;
+    width: max-content;
+    padding: 0.8rem 2rem;
+    background-color: var(--bright_red);
+    border-radius: 4rem;
+    color: var(--very_pale_red);
+    cursor: pointer;
   }
 }
 
