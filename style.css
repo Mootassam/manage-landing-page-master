@@ -143,6 +143,10 @@ p {
     justify-content: center;
     align-items: center;
     align-content: center;
+    background-image: url("./images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 40px -17px;
   }
   .app__header {
     padding: 2rem 1rem 0;
@@ -165,10 +169,6 @@ p {
   }
   .app__content {
     position: relative;
-    background-image: url("./images/bg-tablet-pattern.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 5% -4%;
   }
   .content__chart {
     display: flex;
