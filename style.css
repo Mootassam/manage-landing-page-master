@@ -483,11 +483,11 @@ h4 {
 /* Styling the Footer */
 
 .app__footer {
-  background-color: var(--very_dark_blue);
-  padding: 3rem 6rem;
   display: flex;
-  justify-content: space-between;
+  background-color: var(--very_dark_blue);
   color: var(--vary_light_gray);
+  padding: 3rem 6rem;
+  justify-content: space-between;
 }
 .footer__icon {
   display: flex;
@@ -503,6 +503,10 @@ h4 {
   width: max-content;
   padding: 0 0.5rem 0 0;
 }
+.icon > i:hover {
+  color: var(--bright_red);
+  cursor: pointer;
+}
 .footer_menue {
   display: flex;
   flex-direction: column;
@@ -510,12 +514,23 @@ h4 {
 .app__footer ul li {
   padding: 0 0 0.8rem 0;
 }
+
 .app__footer ul li:hover {
   color: var(--bright_red);
   cursor: pointer;
 }
 .mobile {
   display: flex;
+  justify-content: space-around;
+}
+
+.mobile {
+  display: flex;
+  width: 100%;
+
+  padding: 1rem 2rem;
+}
+.mobile ul {
   justify-content: space-between;
 }
 .form {
@@ -552,8 +567,20 @@ input {
   padding: 0.8rem;
   border-radius: 2rem;
 }
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__form p {
+  display: block;
+  text-align: end;
+  font-size: small;
+}
+
 .footer__copywrite {
-  width: 100%;
+  display: none;
 }
 
 @media screen and (max-width: 900px) {
@@ -612,10 +639,14 @@ input {
   .form input {
     width: 100%;
   }
+  .footer__form > p {
+    display: none;
+  }
   .form button {
     padding: 0.8rem 2.6rem;
   }
   .footer__copywrite {
+    display: block;
     padding-top: 30px;
     justify-content: center;
     align-items: center;
