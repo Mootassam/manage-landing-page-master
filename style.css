@@ -72,7 +72,6 @@ p {
 }
 .menue__button:hover {
   background-color: var(--very_pale_red);
-
   opacity: 90%;
 }
 
@@ -147,6 +146,8 @@ p {
   }
   .app__header {
     padding: 2rem 1rem 0;
+    align-items: flex-start;
+    justify-content: baseline;
   }
   .header__menue {
     display: none;
@@ -157,22 +158,23 @@ p {
   .app__header > img:nth-child(2) {
     display: block;
   }
-  .chart__img > img:nth-child(1) {
+  .chart__img > img {
     position: relative;
-    width: 100%;
+    height: auto;
     z-index: 1;
   }
   .app__content {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    background-image: url("./images/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 5% -4%;
   }
   .content__chart {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 3rem 1rem 0;
+    padding: 1rem 1rem 0;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -200,6 +202,7 @@ p {
   .content__chart > .chart__img {
     z-index: 0;
     width: 100%;
+    height: min-content;
     order: 1;
   }
   .chart__img > img {
@@ -223,7 +226,6 @@ p {
 
   .app__header__mobile {
     display: none;
-
     position: absolute;
     justify-content: center;
     align-items: center;
