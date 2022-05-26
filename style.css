@@ -68,16 +68,23 @@ p {
   border-radius: 3rem;
   color: var(--very_pale_red);
   cursor: pointer;
+  box-shadow: 0px 5px 15px var(--sahdow);
 }
 .menue__button:hover {
-  background-color: var(--very_pale_red);
-  opacity: 90%;
+  opacity: 60%;
 }
-
+.chart__button,
+.testim__button {
+  box-shadow: 0px 5px 15px var(--sahdow);
+}
+.chart__button:hover {
+  opacity: 60%;
+}
+.testim__button:hover {
+  opacity: 60%;
+}
 /* Styling the content */
-
 /* styling the chart__content  */
-
 .content__chart {
   padding: 2rem 6rem 0;
   display: flex;
