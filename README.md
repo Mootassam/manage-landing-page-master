@@ -1,6 +1,5 @@
 <img src="./Desktop.png">
 <br />
-<div style="display :flex;justify-items: baseline;">
 <img src="./hamburger.png">
+<br />
 <img src="./close.png">
-</div>
