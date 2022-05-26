@@ -10,6 +10,10 @@
 body {
   font-size: 16px;
   font-family: Be Vietnam Pro, sans-serif;
+  background-image: url(./images/bg-tablet-pattern.svg);
+  background-position: 158% -14%;
+  background-repeat: no-repeat;
+  object-fit: contain;
 }
 li {
   display: inherit;
@@ -21,11 +25,7 @@ p {
   color: var(--dark_grayish_blue);
 }
 .app {
-  justify-content: center;
   overflow: hidden;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
 }
 /* Styling the header */
 .app__header {
