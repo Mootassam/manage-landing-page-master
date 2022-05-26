@@ -12,7 +12,7 @@ body {
   font-family: Be Vietnam Pro, sans-serif;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   body {
     background-image: url(./images/bg-tablet-pattern.svg);
     background-position: 158% -14%;
@@ -42,6 +42,15 @@ p {
   padding-bottom: 6rem;
 }
 
+@media screen and (max-width: 1024px) {
+  body {
+    background-position: 280% -17%;
+  }
+  .app__header {
+    padding: 2rem 4rem 0;
+    padding-bottom: 6rem;
+  }
+}
 @media screen and (min-width: 900px) {
   .app {
     background-position: center;
@@ -158,6 +167,16 @@ p {
 .close {
   display: none;
 }
+/* Styling for the tablet  */
+@media screen and (max-width: 1024px) {
+  .content__chart {
+    gap: 2rem;
+  }
+  .chart__text > h1 {
+    font-size: 40px;
+  }
+}
+
 /* Styling the mobile view */
 @media only screen and (max-width: 900px) {
   .app {

@@ -1,3 +1,4 @@
 <img src="./Desktop.png">
 <br />
-<img src="./mobile.png">
+<img src="./hamburger.png">
+<img src="./close.png">
