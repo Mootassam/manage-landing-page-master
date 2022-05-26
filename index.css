@@ -10,4 +10,5 @@
   --very_dark_blue: hsl(233, 12%, 13%);
   --very_pale_red: hsl(13, 100%, 96%);
   --vary_light_gray: hsl(0, 0%, 98%);
+  --gradient: linear-gradient(#e66465, #9198e5);
 }
