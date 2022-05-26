@@ -83,6 +83,18 @@ p {
 .testim__button:hover {
   opacity: 60%;
 }
+.number {
+  cursor: pointer;
+}
+.number:hover {
+  opacity: 60%;
+}
+.submit:hover {
+  opacity: 80%;
+}
+.prefooter__button:hover {
+  box-shadow: 0px 0px 15px var(--sahdow);
+}
 /* Styling the content */
 /* styling the chart__content  */
 .content__chart {
