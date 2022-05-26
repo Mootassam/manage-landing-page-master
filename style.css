@@ -22,11 +22,10 @@ p {
 }
 .app {
   justify-content: center;
+  overflow: hidden;
+  justify-content: center;
   align-items: center;
-  background-image: url(./images/bg-tablet-pattern.svg);
-  background-repeat: no-repeat;
-  background-position-y: -250px;
-  background-position-x: 750px;
+  align-content: center;
 }
 /* Styling the header */
 .app__header {
@@ -413,7 +412,14 @@ h4 {
 
 @media screen and (max-width: 900px) {
   .content__testim {
+    display: flex;
     width: 100%;
+    padding: 2rem 1rem;
+  }
+  .content__testim > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
   }
   .testim__button {
     margin: 2rem 0 3rem 0;
@@ -561,13 +567,11 @@ h4 {
   text-align: center;
   padding-top: 10px;
 }
-
 input {
   border: none;
   padding: 0.8rem;
   border-radius: 2rem;
 }
-
 .footer__form {
   display: flex;
   flex-direction: column;
@@ -593,7 +597,6 @@ input {
     align-content: center;
     width: auto;
   }
-
   .footer_menue {
     flex-direction: row;
   }
@@ -606,7 +609,6 @@ input {
   .mobile ul {
     justify-content: space-between;
   }
-
   .footer__icon > img {
     width: auto;
     padding-top: 15px;
