@@ -230,8 +230,9 @@ p {
     align-content: center;
     width: calc(100% - 40px);
     margin: 20px 18px;
-    background-color: var(--very_pale_red);
+    background-color: var(--vary_light_gray);
     z-index: 1;
+    text-align: center;
   }
 
   .header__mobile {
