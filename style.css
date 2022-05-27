@@ -35,7 +35,7 @@ p {
 /* Styling the header */
 .app__header {
   display: flex;
-  padding: 3rem 10rem 0;
+  padding: 4rem 10rem 3rem;
   justify-content: space-between;
   align-items: center;
   align-content: center;
@@ -107,7 +107,7 @@ p {
   display: flex;
   padding: 2rem 10rem 0;
   width: 100%;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
 }
 .chart__text,
 .chart__img {
@@ -131,8 +131,8 @@ p {
 }
 .chart__img > img:nth-child(1) {
   position: relative;
-  width: 111%;
-  height: 100%;
+  width: auto;
+  height: 50vh;
   z-index: 1;
   float: right;
 }
@@ -273,24 +273,29 @@ p {
 
 .content__about {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   align-content: center;
   width: 100%;
-  gap: 7rem;
   padding: 2rem 10rem 0;
   padding-bottom: 6rem;
 }
-
+.about__left,
+.about__right {
+  flex-basis: 50%;
+}
 /* Syling the left  */
 .about__left > h1 {
+  width: 100%;
   padding-bottom: 1rem;
   font-weight: 700;
   line-height: 2.5rem;
   color: var(--dark_blue);
+  font-size: 38px;
 }
 .about__left > p {
   padding-bottom: 2rem;
+  width: 80%;
+  text-align: left;
 }
 
 /* Styling the Right */
@@ -391,6 +396,7 @@ h4 {
   padding-bottom: 6rem;
   color: var(--dark_blue);
   font-weight: 700;
+  font-size: 38px;
 }
 .content__testim > div {
   display: flex;
@@ -424,7 +430,7 @@ h4 {
   padding-top: 1rem;
 }
 .testim__button {
-  margin: 4rem 0 9rem 0;
+  margin: 4rem 0 13rem 0;
   width: max-content;
   padding: 0.8rem 2rem;
   background-color: var(--bright_red);
@@ -458,7 +464,7 @@ h4 {
 /* Styling the prefooter */
 
 .content__prefooter {
-  padding: 3rem 10rem;
+  padding: 4rem 10rem;
   display: flex;
   background-color: var(--bright_red);
   background-image: url(./images/bg-simplify-section-desktop.svg);
