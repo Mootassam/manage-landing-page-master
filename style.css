@@ -10,14 +10,12 @@
 body {
   font-size: 16px;
   font-family: Be Vietnam Pro, sans-serif;
-  background-image: url(./images/bg-tablet-pattern.svg);
-  background-position: center;
 }
 
 @media screen and (min-width: 1024px) {
   body {
     background-image: url(./images/bg-tablet-pattern.svg);
-    background-position: 158% -14%;
+    background-position: 128% -10%;
     background-repeat: no-repeat;
     object-fit: contain;
   }
@@ -106,13 +104,9 @@ p {
 /* Styling the content */
 /* styling the chart__content  */
 .content__chart {
-  padding: 2rem 7rem 0;
   display: flex;
-  justify-content: first baseline;
-  align-items: flex-start;
-  align-content: flex-start;
+  padding: 2rem 8rem 0;
   width: 100%;
-  gap: 7rem;
   padding-bottom: 6rem;
 }
 .chart__text,
@@ -284,7 +278,7 @@ p {
   align-content: center;
   width: 100%;
   gap: 7rem;
-  padding: 2rem 7rem 0;
+  padding: 2rem 8rem 0;
   padding-bottom: 6rem;
 }
 
@@ -464,7 +458,7 @@ h4 {
 /* Styling the prefooter */
 
 .content__prefooter {
-  padding: 3rem 7rem;
+  padding: 3rem 8rem;
   display: flex;
   background-color: var(--bright_red);
   background-image: url(./images/bg-simplify-section-desktop.svg);
@@ -521,7 +515,7 @@ h4 {
   display: flex;
   background-color: var(--very_dark_blue);
   color: var(--vary_light_gray);
-  padding: 3rem 7rem;
+  padding: 3rem 8rem;
   justify-content: space-between;
 }
 .footer__icon {
