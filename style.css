@@ -35,11 +35,11 @@ p {
 /* Styling the header */
 .app__header {
   display: flex;
-  padding: 4rem 10rem 3rem;
+  padding: 6rem 10rem 3rem;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  padding-bottom: 6rem;
+  padding-bottom: 5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -108,11 +108,14 @@ p {
   padding: 2rem 10rem 0;
   width: 100%;
   padding-bottom: 4rem;
+  justify-content: center;
+  align-items: center;
 }
 .chart__text,
 .chart__img {
   flex-basis: 50%;
 }
+
 .chart__text > h1 {
   color: var(--dark_blue);
   font-size: 50px;
@@ -128,13 +131,12 @@ p {
   justify-items: flex-start;
   align-content: flex-start;
   align-items: flex-start;
-}
-.chart__img > img:nth-child(1) {
+  background-image: url(./images/illustration-intro.svg);
+  background-size: cover;
+  z-index: 1;
   position: relative;
   width: auto;
   height: 50vh;
-  z-index: 1;
-  float: right;
 }
 
 .chart__button {
@@ -181,10 +183,7 @@ p {
   .app__header > img:nth-child(2) {
     display: block;
   }
-  .chart__img > img {
-    height: auto;
-    z-index: 1;
-  }
+
   .app__content {
     position: relative;
   }
@@ -217,14 +216,13 @@ p {
     text-align: center;
     padding-bottom: 1.5rem;
   }
-  .content__chart > .chart__img {
-    z-index: 0;
-    width: 100%;
-    height: min-content;
+  .chart__img {
+    background-image: url(./images/illustration-intro.svg);
+    background-size: cover;
+    position: relative;
     order: 1;
-  }
-  .chart__img > img {
-    object-fit: contain;
+    z-index: 1;
+    justify-content: center;
   }
   .chart__button {
     margin: auto;
@@ -232,15 +230,6 @@ p {
     align-items: center;
     align-content: center;
   }
-
-  /* .chart__button {
-    width: max-content;
-    padding: 0.8rem 2rem;
-    background-color: var(--bright_red);
-    border-radius: 3rem;
-    color: var(--very_pale_red);
-    cursor: pointer;
-  } */
 
   .app__header__mobile {
     display: none;
@@ -290,7 +279,7 @@ p {
   font-weight: 700;
   line-height: 2.5rem;
   color: var(--dark_blue);
-  font-size: 38px;
+  font-size: 39px;
 }
 .about__left > p {
   padding-bottom: 2rem;
@@ -396,7 +385,7 @@ h4 {
   padding-bottom: 6rem;
   color: var(--dark_blue);
   font-weight: 700;
-  font-size: 38px;
+  font-size: 39px;
 }
 .content__testim > div {
   display: flex;
