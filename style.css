@@ -35,7 +35,7 @@ p {
 /* Styling the header */
 .app__header {
   display: flex;
-  padding: 3rem 7rem 0;
+  padding: 3rem 10rem 0;
   justify-content: space-between;
   align-items: center;
   align-content: center;
@@ -105,7 +105,7 @@ p {
 /* styling the chart__content  */
 .content__chart {
   display: flex;
-  padding: 2rem 8rem 0;
+  padding: 2rem 10rem 0;
   width: 100%;
   padding-bottom: 6rem;
 }
@@ -278,7 +278,7 @@ p {
   align-content: center;
   width: 100%;
   gap: 7rem;
-  padding: 2rem 8rem 0;
+  padding: 2rem 10rem 0;
   padding-bottom: 6rem;
 }
 
@@ -458,7 +458,7 @@ h4 {
 /* Styling the prefooter */
 
 .content__prefooter {
-  padding: 3rem 8rem;
+  padding: 3rem 10rem;
   display: flex;
   background-color: var(--bright_red);
   background-image: url(./images/bg-simplify-section-desktop.svg);
@@ -515,10 +515,11 @@ h4 {
   display: flex;
   background-color: var(--very_dark_blue);
   color: var(--vary_light_gray);
-  padding: 3rem 8rem;
+  padding: 3rem 10rem;
   justify-content: space-between;
 }
 .footer__icon {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -528,9 +529,12 @@ h4 {
   filter: brightness(0) invert(1);
   width: auto;
 }
+.icon {
+  display: flex;
+}
 .icon > i {
   width: max-content;
-  padding: 0 0.5rem 0 0;
+  padding: 0 1rem 0 0;
 }
 .icon > i:hover {
   color: var(--bright_red);
