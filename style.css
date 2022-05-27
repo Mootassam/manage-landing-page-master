@@ -10,9 +10,11 @@
 body {
   font-size: 16px;
   font-family: Be Vietnam Pro, sans-serif;
+  background-image: url(./images/bg-tablet-pattern.svg);
+  background-position: center;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
   body {
     background-image: url(./images/bg-tablet-pattern.svg);
     background-position: 158% -14%;
@@ -35,14 +37,14 @@ p {
 /* Styling the header */
 .app__header {
   display: flex;
-  padding: 2rem 6rem 0;
+  padding: 3rem 7rem 0;
   justify-content: space-between;
   align-items: center;
   align-content: center;
   padding-bottom: 6rem;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
   .app {
     background-position: center;
   }
@@ -104,7 +106,7 @@ p {
 /* Styling the content */
 /* styling the chart__content  */
 .content__chart {
-  padding: 2rem 6rem 0;
+  padding: 2rem 7rem 0;
   display: flex;
   justify-content: first baseline;
   align-items: flex-start;
@@ -155,35 +157,11 @@ p {
 .close {
   display: none;
 }
-@media screen and (max-width: 1024px) {
-  body {
-    background-position: 370% -17%;
-  }
-  .app__header {
-    padding: 2rem 3rem 0;
-    padding-bottom: 6rem;
-  }
-  .content__chart,
-  .content__about {
-    padding: 2rem 3rem 0;
-  }
-  .content__prefooter,
-  .app__footer {
-    padding: 3rem 3rem;
-  }
-}
+
 /* Styling for the tablet  */
-@media screen and (max-width: 1024px) {
-  .content__chart {
-    gap: 2rem;
-  }
-  .chart__text > h1 {
-    font-size: 40px;
-  }
-}
 
 /* Styling the mobile view */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
   .app {
     flex-direction: column;
     width: 100%;
@@ -306,7 +284,7 @@ p {
   align-content: center;
   width: 100%;
   gap: 7rem;
-  padding: 2rem 6rem 0;
+  padding: 2rem 7rem 0;
   padding-bottom: 6rem;
 }
 
@@ -345,7 +323,7 @@ h4 {
   color: var(--dark_blue);
   padding-bottom: 1.2rem;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
   .content__about {
     width: 100%;
     flex-direction: column;
@@ -461,7 +439,7 @@ h4 {
   cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .content__testim {
     display: flex;
     width: 100%;
@@ -486,7 +464,7 @@ h4 {
 /* Styling the prefooter */
 
 .content__prefooter {
-  padding: 3rem 6rem;
+  padding: 3rem 7rem;
   display: flex;
   background-color: var(--bright_red);
   background-image: url(./images/bg-simplify-section-desktop.svg);
@@ -515,7 +493,7 @@ h4 {
   cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .content__prefooter {
     justify-content: center;
     align-items: center;
@@ -543,7 +521,7 @@ h4 {
   display: flex;
   background-color: var(--very_dark_blue);
   color: var(--vary_light_gray);
-  padding: 3rem 6rem;
+  padding: 3rem 7rem;
   justify-content: space-between;
 }
 .footer__icon {
@@ -638,7 +616,7 @@ input {
   display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .app__footer {
     flex-direction: column;
     padding: 2rem 1rem;
@@ -708,22 +686,5 @@ input {
   }
   .footer__copywrite p {
     font-size: small;
-  }
-}
-@media screen and (min-width: 1024px) {
-  body {
-    background-position: 370% -17%;
-  }
-  .app__header {
-    padding: 2rem 3rem 0;
-    padding-bottom: 6rem;
-  }
-  .content__chart,
-  .content__about {
-    padding: 2rem 3rem 0;
-  }
-  .content__prefooter,
-  .app__footer {
-    padding: 3rem 3rem;
   }
 }
