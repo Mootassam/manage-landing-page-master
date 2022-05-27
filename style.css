@@ -35,22 +35,13 @@ p {
 /* Styling the header */
 .app__header {
   display: flex;
-  padding: 2rem 4rem 0;
+  padding: 2rem 6rem 0;
   justify-content: space-between;
   align-items: center;
   align-content: center;
   padding-bottom: 6rem;
 }
 
-@media screen and (max-width: 1024px) {
-  body {
-    background-position: 280% -17%;
-  }
-  .app__header {
-    padding: 2rem 4rem 0;
-    padding-bottom: 6rem;
-  }
-}
 @media screen and (min-width: 900px) {
   .app {
     background-position: center;
@@ -109,20 +100,22 @@ p {
 .prefooter__button:hover {
   box-shadow: 0px 0px 15px var(--sahdow);
 }
+
 /* Styling the content */
 /* styling the chart__content  */
 .content__chart {
   padding: 2rem 6rem 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: first baseline;
   align-items: flex-start;
-  align-content: center;
+  align-content: flex-start;
   width: 100%;
   gap: 7rem;
   padding-bottom: 6rem;
 }
-.chart__text {
-  width: 50%;
+.chart__text,
+.chart__img {
+  flex-basis: 50%;
 }
 .chart__text > h1 {
   color: var(--dark_blue);
@@ -139,18 +132,13 @@ p {
   justify-items: flex-start;
   align-content: flex-start;
   align-items: flex-start;
-  width: 50%;
 }
 .chart__img > img:nth-child(1) {
   position: relative;
   width: 111%;
   height: 100%;
   z-index: 1;
-}
-.chart__img > img:nth-child(2) {
-  position: absolute;
-  top: 0;
-  z-index: 0;
+  float: right;
 }
 
 .chart__button {
@@ -166,6 +154,23 @@ p {
 }
 .close {
   display: none;
+}
+@media screen and (max-width: 1024px) {
+  body {
+    background-position: 370% -17%;
+  }
+  .app__header {
+    padding: 2rem 3rem 0;
+    padding-bottom: 6rem;
+  }
+  .content__chart,
+  .content__about {
+    padding: 2rem 3rem 0;
+  }
+  .content__prefooter,
+  .app__footer {
+    padding: 3rem 3rem;
+  }
 }
 /* Styling for the tablet  */
 @media screen and (max-width: 1024px) {
@@ -703,5 +708,22 @@ input {
   }
   .footer__copywrite p {
     font-size: small;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-position: 370% -17%;
+  }
+  .app__header {
+    padding: 2rem 3rem 0;
+    padding-bottom: 6rem;
+  }
+  .content__chart,
+  .content__about {
+    padding: 2rem 3rem 0;
+  }
+  .content__prefooter,
+  .app__footer {
+    padding: 3rem 3rem;
   }
 }
