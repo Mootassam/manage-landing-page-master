@@ -28,6 +28,7 @@ a {
 }
 p {
   color: var(--dark_grayish_blue);
+  line-height: 1.6;
 }
 .app {
   overflow: hidden;
