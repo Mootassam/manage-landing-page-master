@@ -96,7 +96,7 @@ p {
   opacity: 60%;
 }
 .submit:hover {
-  opacity: 80%;
+  opacity: 0.5;
 }
 .prefooter__button:hover {
   box-shadow: 0px 0px 15px var(--sahdow);
@@ -137,7 +137,10 @@ p {
   z-index: 1;
   position: relative;
   width: auto;
-  height: 50vh;
+  height: 70vh;
+}
+.chart__img > img {
+  display: none;
 }
 
 .chart__button {
@@ -217,13 +220,21 @@ p {
     text-align: center;
     padding-bottom: 1.5rem;
   }
-  .chart__img {
-    background-image: url(./images/illustration-intro.svg);
-    background-size: cover;
-    position: relative;
+
+  
+  }
+ .chart__img {
+   background-image: none;
+   height: auto;
+    z-index: 0;
+    width: 100%;
     order: 1;
+  }
+  .chart__img > img {
+    display: block;
+    height: auto;
+    width: 100%;
     z-index: 1;
-    justify-content: center;
   }
   .chart__button {
     margin: auto;
@@ -258,7 +269,7 @@ p {
   .mobile__list > li:hover {
     color: var(--bright_red);
   }
-}
+
 /* Styling the content about  */
 
 .content__about {
@@ -287,6 +298,7 @@ p {
   padding-bottom: 2rem;
   width: 64%;
   text-align: left;
+  
 }
 
 /* Styling the Right */
@@ -321,20 +333,21 @@ h4 {
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding: 2rem 0rem 0 1rem;
-    padding-bottom: 2rem;
+    padding: 2rem 1rem;
     gap: 1rem;
   }
 
   .about__left > h1 {
     padding-bottom: 1rem;
-
     text-align: center;
     font-weight: bolder;
+    font-size: 31px;
   }
   .about__left > p {
     text-align: center;
+    width: 100%;
     padding-bottom: 10px;
+   
   }
   .about__right {
     width: 100%;
@@ -356,6 +369,7 @@ h4 {
     justify-content: center;
     align-items: center;
     align-content: center;
+  
   }
   .text > h4 {
     position: absolute;
@@ -436,11 +450,15 @@ h4 {
     display: flex;
     width: 100%;
     padding: 2rem 1rem;
+    text-align: center;
   }
   .content__testim > div {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+  }
+  .content__testim h1 {
+    font-size: 31px;
   }
   .testim__button {
     margin: 2rem 0 3rem 0;
@@ -622,6 +640,7 @@ input {
     align-items: center;
     align-content: center;
     width: auto;
+    gap:1.5rem
   }
   .footer_menue {
     flex-direction: row;
@@ -650,12 +669,16 @@ input {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    padding-bottom: 1rem;
   }
   .icon > i {
-    font-size: 25px;
+    font-size: 30px;
     padding-bottom: 15px;
   }
-
+.footer__form{
+  width: 100%;
+ 
+}
   .form {
     width: 100%;
     order: 1;
@@ -671,7 +694,7 @@ input {
     display: none;
   }
   .form button {
-    padding: 0.8rem 2.6rem;
+    padding: 0.8rem 1.6rem;
   }
   .footer__copywrite {
     display: block;
